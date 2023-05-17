@@ -31,4 +31,14 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'coin_gecko' => [
+        'api' => [
+            'url' => [
+                'pro' => 'https://pro-api.coingecko.com/api/v3',
+                'usual' => 'https://api.coingecko.com/api/v3',
+            ],
+            'header_attribute' => 'x-cg-pro-api-key',
+            'key' => env('COIN_GECKO_API_KEY'),
+        ],
+    ],
 ];
